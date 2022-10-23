@@ -202,6 +202,7 @@ h2{
     .bio-description{
         padding: 0;
         margin: 0px 15px;
+        text-align: center;
     }
 
     .bio-title{
@@ -229,12 +230,18 @@ h2{
     justify-content: space-evenly;
 }
 
+.estudios-info{
+    width: 33.33%;
+    padding: 0px 25px;
+}
+
 .estudios-info p{
     line-height: 0px;
 }
 
 @media only screen and (max-width: 700px) {
     .Estudios{
+        padding: 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -245,6 +252,11 @@ h2{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .estudios-info{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 }
 
@@ -292,6 +304,15 @@ h2{
     line-height:0
 }
 
+@media only screen and (max-width: 600px) {
+    .conocimientos-description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .Experiencia{
     background: #ededee6b;
     width: 100%;
@@ -300,4 +321,9 @@ h2{
 
 .experiencia-description{
     display: flex;
+}
+
+.Contacto{
+    width: 100%;
+    padding: 25px 25px;
 }
