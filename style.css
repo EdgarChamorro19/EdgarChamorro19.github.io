@@ -1,0 +1,277 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #fcfcfcee;
+    margin: 0;
+}
+  
+button {
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    font-style: normal;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    padding: 0px 10px;
+}
+  
+a:hover {
+    color: #da7b7b;
+}  
+
+.navbar {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 64px;
+    background: #ffffff;
+    color: #19191c;
+    font-family: "Poppins";
+    box-sizing: border-box;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 710px) {
+    .navbar {
+      justify-content: space-between;
+      padding: 0 0 0 16px;
+    }
+}
+  
+.navbar-overlay {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(73, 73, 73, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+  
+body.open .navbar-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+  
+@media only screen and (min-width: 710px) {
+    .navbar-overlay {
+      display: none;
+    }
+}
+  
+.navbar-burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+}
+  
+@media only screen and (min-width: 710px) {
+    .navbar-burger {
+      display: none;
+    }
+}
+  
+.navbar-menu {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    translate: -100% 0;
+    width: 270px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #f3f3f3f1;
+    visibility: hidden;
+    transition: translate 0.3s;
+  }
+  
+body.open .navbar-menu {
+    translate: 0 0;
+    visibility: visible;
+}
+  
+@media only screen and (min-width: 710px) {
+    .navbar-menu {
+      position: static;
+      translate: 0 0;
+      width: auto;
+      background: transparent;
+      flex-direction: row;
+      visibility: visible;
+    }
+}
+  
+.navbar-menu > button {
+    color: #ffffff;
+    background: transparent;
+    padding: 0 8px;
+}
+
+section{
+    padding: 0px 25px;
+}
+
+
+.bio{
+    display: flex;
+    flex-direction: row;
+    padding: 25px 10px;
+}
+
+.bio-description{
+    margin: 0 50px;
+}
+
+h2{
+    font-family: "Poppins";
+}
+
+.bio-text{
+    text-align: justify;
+}
+
+.download-button{
+    background-color: #4CAF50; 
+    border-radius: 10px;
+    color: white;
+    padding: 15px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family:'Trebuchet MS';
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.download-button:hover{
+    background-color: white;
+    border-radius: 10px;
+    color: #4CAF50;
+    border: 2px solid #4CAF50; /* Green */
+}
+
+.imagen{
+    margin: 10px 0;
+    height: 250px;
+    width: 250px;
+    border-radius: 30%;
+    box-shadow: 0 9px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 600px) {
+    section{
+        padding: 10px 0px;
+    }
+
+    .bio{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bio-description{
+        padding: 0;
+        margin: 0px 15px;
+    }
+
+    .bio-title{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imagen{
+        margin: 10px 0;
+        height: 250px;
+        width: 200px;
+        border-radius: 30%;
+        box-shadow: 0 9px 15px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.Estudios{
+    position: grid;
+    
+}
+
+.conocimientos{
+    width: 100%;
+    display: inline-block;
+    flex-direction: row;
+    padding: 10px 10px;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .conocimientos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.card-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,  minmax(155px, 1fr));
+    padding: 0px 25px;
+    justify-content: center;
+    padding: 0px 100px;
+}
+
+.card {
+    margin: 10px 10px;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+  /* Add some padding inside the card container */
+.container {
+    font-family: "Poppins";
+    padding: 2px 16px;
+}
+
+.img-html{
+    width: 150px;
+    height: 250px;
+}
