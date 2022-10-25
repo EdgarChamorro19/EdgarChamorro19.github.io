@@ -57,7 +57,7 @@ a:hover {
   
 .navbar-overlay {
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -136,6 +136,10 @@ body.open .navbar-menu {
     padding: 0 8px;
 }
 
+section [id] {
+    scroll-margin-top: 50px;
+}
+
 .introduction{
     display: flex;
     flex-direction: column;
@@ -146,7 +150,6 @@ body.open .navbar-menu {
     justify-content: center;
     align-items: center;
 }
-
 
 .introduction h2{
     font-size: 35px;
@@ -163,10 +166,9 @@ body.open .navbar-menu {
 
 .bio{
     width: 100%;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     padding: 25px 25px;
-    overflow: hidden;
 }
 
 .bio-description{
