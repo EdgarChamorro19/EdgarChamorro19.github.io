@@ -33,7 +33,7 @@ a:hover {
 
 .navbar {
     position: sticky;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     display: flex;
@@ -137,25 +137,28 @@ body.open .navbar-menu {
 }
 
 .introduction{
-    position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 500px;
+    height: 95vh;
     padding: 25px 25px;
-    background-color: #4caf4f5e;
-    background: url(assets/Background.jpg) no-repeat center center fixed;
+    background: linear-gradient(to bottom, rgba(250, 250, 250, 0.35), rgba(255, 255, 255, 0.70)),
+    url(assets/imagenes/Background.jpg) no-repeat center center fixed;
     justify-content: center;
     align-items: center;
 }
 
+
 .introduction h2{
+    font-size: 35px;
     line-height: 0px;
+    font-weight: bolder;
+
 }
 
 .introduction p{
     line-height: 0px;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bolder;
 }
 
 .bio{
@@ -209,10 +212,6 @@ h2{
 }
 
 @media only screen and (max-width: 600px) {
-    section{
-        padding: 10px 0px;
-    }
-
     .introduction h2{
         text-align: center;
         line-height: normal;
@@ -251,7 +250,7 @@ h2{
 }
 .Estudios{
     width: 100%;
-    padding: 30px 25px;
+    padding: 30px 50px;
 }
 
 .estudios-container{
@@ -305,7 +304,7 @@ h2{
     width: 100%;
     display: inline-block;
     flex-direction: row;
-    padding: 25px 25px;
+    padding: 25px 50px;
     justify-content: center;
 }
 
@@ -321,8 +320,9 @@ h2{
 
 .conocimientos-description{
     width: 100%;
-    justify-content: center;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 15px 10px;
 }
 
@@ -356,16 +356,29 @@ h2{
 
 .Experiencia{
     width: 100%;
-    padding: 25px 25px;
+    padding: 25px 50px;
+}
+
+.Experiencia img{
+    height: 100px;
+    width: 350px;
 }
 
 .experiencia-description{
     display: flex;
+    gap: 50px;
+}
+
+.experiencia-item{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 0%;
 }
 
 .Contacto{
     width: 100%;
-    padding: 25px 25px;
+    padding: 25px 50px;
 }
 
 footer{
