@@ -435,10 +435,15 @@ h2{
 }
 
 .contacto-description{
-    width: 100%;
     display: flex;
     padding: 10px;
-    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.contacto-item{
+    width: 5%;
 }
 
 footer{
