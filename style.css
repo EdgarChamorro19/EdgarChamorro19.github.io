@@ -156,6 +156,7 @@ section [id] {
 }
 
 .introduction h2{
+    font-family: 'Poppins', sans-serif;
     font-size: 35px;
     line-height: 30px;
     font-weight: bolder;
@@ -163,8 +164,9 @@ section [id] {
 }
 
 .introduction p{
+    font-family: 'Poppins', sans-serif;
     line-height: 5px;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bolder;
 }
 
@@ -172,7 +174,7 @@ section [id] {
     width: 100%;
     display: inline-flex;
     flex-direction: row;
-    padding: 30px 50px;
+    padding: 50px 50px;
 }
 
 .bio-description{
@@ -184,6 +186,7 @@ h2{
 }
 
 .bio-text{
+    line-height: 1.5;
     text-align: justify;
 }
 
@@ -255,6 +258,11 @@ h2{
     }
 }
 .Estudios{
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    overflow: hidden;
     width: 100%;
     padding: 30px 50px;
 }
@@ -330,6 +338,7 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
     padding: 15px 10px;
+    gap: 70px;
 }
 
 .column-item{
@@ -344,10 +353,11 @@ h2{
 }
 
 .column-img img{
-    height: 150px;
+    height: 90px;
 }
 
 .column-text{
+    font-family: 'Poppins', sans-serif;
     line-height:0
 }
 
@@ -358,29 +368,52 @@ h2{
         justify-content: center;
         align-items: center;
     }
+    .column-img img{
+        height: 90px;
+    }
 }
 
 .Experiencia{
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    overflow: hidden;
     width: 100%;
     padding: 25px 50px;
 }
 
+.experiencia-description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    line-height: 1.7;
+    font-family: "Poppins";
+}
+
+.experiencia-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
 .Experiencia img{
+    text-align: center;
     height: 100px;
     width: 350px;
 }
 
-.experiencia-description{
+.experiencia-info{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
 }
 
-.experiencia-item{
-    width: 100%;
-    display: flex;
-    gap: 50px;
+.experiencia-info ul{
+    list-style-type: square;
 }
 
 @media only screen and (max-width: 710px) {
@@ -393,7 +426,7 @@ h2{
         align-items: center;
     }
 
-    
+
 }
 
 .Contacto{
@@ -413,5 +446,6 @@ footer{
     width: 100%;
     height: 100%;
     justify-content: center;
-    background: #c8c8c9;
+    background: #141414 ;
+    color: #fff;
 }
