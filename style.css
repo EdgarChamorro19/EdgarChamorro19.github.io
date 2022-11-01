@@ -447,6 +447,24 @@ h2{
     gap: 200px;
 }
 
+@media only screen and (max-width: 710px) {
+    .Experiencia,
+    .experiencia-description,
+    .experiencia-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:0px;
+    }
+    .Experiencia img{
+        text-align: center;
+        width: 100%;
+
+    }
+
+}
+
 .contacto-item svg{
     width: 60px;
     height: 100px;
